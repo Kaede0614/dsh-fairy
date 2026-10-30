@@ -1,0 +1,53 @@
+{
+  "name": "dsh-fairy",
+  "version": "0.26.1",
+  "description": "绝区零 Fairy（仙灵）皮肤：H.D.D. 深蓝界面、大眼 mascot、fairy 人设 preset、GPT-SoVITS 语音与只读余额条（DeepSeek Harness / dsh web 插件）。",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/client.js"
+  },
+  "files": [
+    "lib",
+    "client",
+    "persona",
+    "assets",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "zzz",
+    "fairy",
+    "agent-preset",
+    "theme"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaede0614/dsh-fairy.git"
+  },
+  "homepage": "https://github.com/Kaede0614/dsh-fairy#readme",
+  "bugs": {
+    "url": "https://github.com/Kaede0614/dsh-fairy/issues"
+  },
+  "author": "Kaede0614",
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
